@@ -1,6 +1,6 @@
 # Study-OPC-UA-.NET
 
-##개요
+## 개요
 본 Repository의 목적은 .Net 환경에서의 OPC UA 학습을 처음시작하려는 분들에게 도움이 되기 위함입니다.
 
  OPC Foundation에서는 .Net 환경에서의 OPC UA 개발과 관련하여 아래 2개의 Repository를 통해 SDK, Library, Sample Application 등 꽤 많은 자료와 코드를 공개하고 있습니다.
@@ -24,7 +24,7 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
 
 
 
-##사전 요구사항 및 추천사항
+## 사전 요구사항 및 추천사항
 
  - .Net Framework 4.6.1
 
@@ -170,13 +170,13 @@ Cofiguration 파일에서 ThubmPrint를 명시할 수 있다.
 10. 암화화 통신
 
 
-##예제 프로젝트
+## 예제 프로젝트
 
-###Minimal Client
+### Minimal Client
 
-###Mimimal Server
+### Mimimal Server
 
-###Mimimal Client With Certification
+### Mimimal Client With Certification
 
 
 ## 참고 사이트
