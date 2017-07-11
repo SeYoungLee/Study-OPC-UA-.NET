@@ -23,7 +23,6 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
 여기서 부터는 간결함을 위해 반말체로 작성하겠습니다.
 
 
-
 ## 사전 요구사항 및 추천사항
 
  - .Net Framework 4.6.1<br>
@@ -65,15 +64,15 @@ https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sa
 <br>
 2.기타 유용한 모듈<br>
    다음의 모듈들은 OPC UA 관련 응용프로그램을 개발할 때 참조하거나 사용할 수 있는 UI Control들을 포함하고 있으며 상용제품이 아닌 프로토타입이나 학습을 위한 프로그램을 만들때 유용하다.<br>
-   - Opc.Ua.SampleControls
-   - Opc.Ua.ServerControls
-   - Opc.Ua.ClientControls
+   - Opc.Ua.SampleControls<br>
+   - Opc.Ua.ServerControls<br>
+   - Opc.Ua.ClientControls<br>
 <br>
 3.OPC UA의 보안<br>
-OPC UA와 OPC Classic의 가장 큰 차이점은 보안에 대한 기능 강화와 플랫폼 독립적인 기술이라는 점이다.
-특히, OPC UA의 보안에 대한 내용은 OPC UA를 학습하고자 할 때 가장 먼저 만나게 되는 걸림돌이라 생각된다.
-OPC UA에 본격적으로 학습하기 전에 OPC UA의 보안 메카니즘에 대해서 어느정도 학습할 것을 권장한다.
-OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있도록 되어 있으나, 코드를 분석하다 보면 보안관련 내용과 계속 맞닺뜨리게 되어 있다.
+OPC UA와 OPC Classic의 가장 큰 차이점은 보안에 대한 기능 강화와 플랫폼 독립적인 기술이라는 점이다.<br>
+특히, OPC UA의 보안에 대한 내용은 OPC UA를 학습하고자 할 때 가장 먼저 만나게 되는 걸림돌이라 생각된다.<br>
+OPC UA에 본격적으로 학습하기 전에 OPC UA의 보안 메카니즘에 대해서 어느정도 학습할 것을 권장한다.<br>
+OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있도록 되어 있으나, 코드를 분석하다 보면 보안관련 내용과 계속 맞닺뜨리게 되어 있다.<br>
 
 
 ## OPC UA의 보안단계 (Security Tier)
