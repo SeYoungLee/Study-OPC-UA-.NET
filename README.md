@@ -15,7 +15,7 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
  부정확한 내용이 있을수 있음을 참조해 주시고, 틀린 내용이 있으면 Full Request나 Issue 등록 등을 통해 알려 주시길 부탁드립니다.
 
 
- 상기의 두 Repostiory는 동일하거나 유사해 보이는 프로젝트를 많이 포함하고 있으나, Certificates 처리 등 미세하게 다른 부분들이 있으며,
+ 상기의 두 Repostiory는 동일하거나 유사해 보이는 프로젝트를 많이 포함하고 있으나, Certificates 처리 등 미세하게 다른 부분들이 있고,
  가장 큰 차이점은 UA-.NETStandardLibrary는 .Net Standard 프레임워크를 사용하여 Linux, iOS, Android를 포함하여 Cloud환경도 지원한다는 점입니다.<br>
  본 Repository는 UA-.NETStandardLibrary을 베이스로 합니다.
 
