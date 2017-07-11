@@ -63,7 +63,7 @@ https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sa
 - Opc.Ua.Configuration : ApplicationInstant 객체 및 각종 상수값 등이 정의 되어 있음
 <br>
 2.기타 유용한 모듈<br>
-   다음의 모듈들은 OPC UA 관련 응용프로그램을 개발할 때 참조하거나 사용할 수 있는 UI Control들을 포함하고 있으며 상용제품이 아닌 프로토타입이나 학습을 위한 프로그램을 만들때 유용하다.<br>
+   다음의 모듈들은 OPC UA 관련 응용프로그램을 개발할 때 참조하거나 사용할 수 있는 UI Control들을 포함하고 있으며 상용제품이 아닌 프로토타입이나 학습을 위한 프로그램을 만들때 유용하다.
    - Opc.Ua.SampleControls<br>
    - Opc.Ua.ServerControls<br>
    - Opc.Ua.ClientControls<br>
@@ -82,7 +82,8 @@ OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있
  OPC UA는 인증 기능 구현을 위해 X.509(인증서)를 활용한다.<br>
  인증이란 "내가 진짜 나라는 걸 증명 하는 것"이라 할 수 있는데, 서버는 접속을 요청한 클라이언트가 사전에 허용된 그 클라이언트가 맞는지 확인 후 접속을 받아 들여야 하고, 클라이언트 역시 지금 접속하고 있는 서버가 내가 접속하고자 하는 서버가 진짜 맞는지 확인 후 통신을 해야한다.<br>
  그러나 OPC UA에서 인증기능이 강제되어 있는 것은 아니고 선택적으로 적용할 수 있다.<br>
-따라서 4가지 케이스가 있을 수 있는데 OPC UA에서는 이 4가지 모두 사용할 수 있다. (OPC UA Security Model에서는 이를 Security Tier라고 한다.)
+따라서 4가지 케이스가 있을 수 있는데 OPC UA에서는 이 4가지 모두 사용할 수 있다. <br>
+(OPC UA Security Model에서는 이를 Security Tier라고 한다.)
 
  - Tier 1 : No Authenication
  클라이언트, 서버 모두 상대방이 믿을 만한 상대인지 확인하지 않는 모드이다. 그러나 이경우에도 유효한 인증서를 상호간에 교환해야 하고 유효하지
