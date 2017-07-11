@@ -173,7 +173,7 @@ Cofiguration 파일에서 ThumbPrint를 명시할 수 있다.
 ### Minimal Client
 
  System.Security.Cryptography.X509Certificates 관련 모듈을 찾을 수 없다는 에러가 나는 경우
-패키지 관리자에서 아래 명령을 실행하여 해당 모듈 설치
+패키지 관리자에서 아래 명령을 실행하여 해당 모듈 설치<br>
 Install-Package System.Security.Cryptography.X509Certificates -Version 4.1.0.0 
 
 ### Mimimal Server
