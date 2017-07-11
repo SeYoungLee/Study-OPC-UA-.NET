@@ -43,7 +43,7 @@ https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sa
  - OPC UA 관련 프로그램을 빌드하고 실행하기 위해서는 'CertificateGenerator'와 'Local Discovery Server(LDS)'가 필요할 수 있음<br>
   직접 빌드해서 사용할 수도 있으나 C++ 개발환경을 구축한다거나 Open SSL을 빌드해서 추가해야 하는등 귀찮고 번거로운 점이 많음.<br>
  시작부터 진을 빼지 않기 위해, 다시 한번 'Sample Applcation'패키지를 다운받아 설치 할 것을 추천.<br>
- 패키지에는 ''CertificateGenerator'와 LDS가 포함되어 있음
+ 패키지에는 CertificateGenerator와 LDS가 포함되어 있음
 
  - Certificate Generator 빌드<br>
   https://github.com/OPCFoundation/Misc-Tools 에서 소스코드를 받아 빌드<br>
