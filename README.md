@@ -117,7 +117,7 @@ OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있
 둘째, 인증 기능을 사용하려면 선택한 방식에 따라 인증서를 상대방에게 사전에 전달해고 등록해야 한다.
 
 
- 예제 프로그램들의 경우, ApplicationInstance 객체의 CheckApplicationInstanceCertificate() 메소드를 호출하여 만들어진 인증서가 없는 경우 자동으로 만들어지도록 되어 있다. 이를 self-signed certificates 라고 한다.<br>
+ UA-.NETStandardLibrary 예제 프로그램들의 경우, ApplicationInstance 객체의 CheckApplicationInstanceCertificate() 메소드를 호출하여 만들어진 인증서가 없는 경우 자동으로 만들어지도록 되어 있다. 이를 self-signed certificates 라고 한다.<br>
  만들어진 인증서는 기본적으로 아래 2폴더에 동시에 생성된다.<br>
  C:\ProgramData\OPC Foundation\CertificateStores\MachineDefault\certs<br>
  C:\ProgramData\OPC Foundation\CertificateStores\UA Applications\certs
