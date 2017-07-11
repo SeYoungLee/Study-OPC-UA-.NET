@@ -135,7 +135,7 @@ OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있
  인증서 파일명을 보면 대괄호 안에 긴 숫자와 알파벳이 있는데 이를 ThumbPrint라고 한다.
  기본적으로 인증서는 인증서 내의 Component Name(CN)으로 구분하는데 단순 문자열이므로 중복될 수 있다.
 중복되는 경우 먼저 발견된 인증서를 사용하도록 되어 있고, 인증서를 명확하게 구분할 필요가 있는 경우 사용하는 것이 ThumbPrint이다.
-Cofiguration 파일에서 ThubmPrint를 명시할 수 있다.
+Cofiguration 파일에서 ThumbPrint를 명시할 수 있다.
 
 
 - 인증서 저장소<br>
