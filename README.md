@@ -1,4 +1,4 @@
-# Study-OPC-UA-.NET
+<br># Study-OPC-UA-.NET
 
 ## 개요
 본 Repository의 목적은 .Net 환경에서의 OPC UA 학습을 처음시작하려는 분들에게 도움이 되기 위함입니다.
@@ -16,7 +16,7 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
 
 
  상기의 두 Repostiory는 동일하거나 유사해 보이는 프로젝트를 많이 포함하고 있으나, Certificates 처리 등 미세하게 다른 부분들이 있으며,
- 가장 큰 차이점은 UA-.NETStandardLibrary는 .Net Standard 프레임워크를 사용하여 Linux, iOS, Android를 포함하여 Cloud환경도 지원한다는 점입니다.
+ 가장 큰 차이점은 UA-.NETStandardLibrary는 .Net Standard 프레임워크를 사용하여 Linux, iOS, Android를 포함하여 Cloud환경도 지원한다는 점입니다.<br>
  본 Repository는 UA-.NETStandardLibrary을 베이스로 합니다.
 
 
@@ -132,23 +132,23 @@ OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있
  예제 프로그램에서는 사전에 신뢰할 수 있는 인증서로 등록되어 있지 않은 경우, 신뢰할 수 없는 인증서라는 경고와 함께 계속 진행하겠냐고 묻는 대화상자가 뜨고 '예'를 누르는 경우 통신을 할 수 있게 되어있다.
 
 
-- ThumbPrint
+- ThumbPrint<br>
  인증서 파일명을 보면 대괄호 안에 긴 숫자와 알파벳이 있는데 이를 ThumbPrint라고 한다.
  기본적으로 인증서는 인증서 내의 Component Name(CN)으로 구분하는데 단순 문자열이므로 중복될 수 있다.
 중복되는 경우 먼저 발견된 인증서를 사용하도록 되어 있고, 인증서를 명확하게 구분할 필요가 있는 경우 사용하는 것이 ThumbPrint이다.
 Cofiguration 파일에서 ThubmPrint를 명시할 수 있다.
 
 
-- 인증서 저장소
+- 인증서 저장소<br>
  Windows 환경에서는 인증서를 저장할 수 있는 곳(Store)으로 'Windows'와 'Directory'가 있다. 'Windows'는 윈도우 OS에서 제공하는 레지스트리 기반의 저장소이고
 'Directory'는 앞서 살펴본 파일기반의 인증서 저장소를 말한다.
  UA-.NETStandardLibrary 예제의 경우 소스를 내려 받고 실행하면 에러가 발생하는데, Configuration 파일에서 'StoreType'의 값을 'Directory'로 변경하고
 폴더 경로를 설정하고 나니 에러가 해결되었다.
 
 
-- ConfigurationTool
+- ConfigurationTool<br>
  Sample 패키지를 설치한 경우 Opc.Ua.ConfigurationTool.exe 을 실행하여 인증서 관리 작업을 간편하게 처리할 수 있다.
-
+<br>
 
  인증 관련 테스트를 위해서는 별도의 컴퓨터나 가상환경을 활용하여 클라이언트와 서버를 분리하는 것을 권장한다.
 
