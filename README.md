@@ -64,7 +64,7 @@ https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sa
 - Opc.Ua.Configuration : ApplicationInstant 객체 및 각종 상수값 등이 정의 되어 있음
 <br>
 2.기타 유용한 모듈<br>
-   다음의 모듈들은 OPC UA 관련 응용프로그램을 개발할 때 참조하거나 사용할 수 있는 UI Control들을 포함하고 있으며 상용제품이 아닌 프로토타입이나 학습을 위한 프로그램을 만들때 유용하다.
+   다음의 모듈들은 OPC UA 관련 응용프로그램을 개발할 때 참조하거나 사용할 수 있는 UI Control들을 포함하고 있으며 상용제품이 아닌 프로토타입이나 학습을 위한 프로그램을 만들때 유용하다.<br>
    - Opc.Ua.SampleControls
    - Opc.Ua.ServerControls
    - Opc.Ua.ClientControls
