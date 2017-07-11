@@ -5,7 +5,7 @@
 
  OPC Foundation에서는 .Net 환경에서의 OPC UA 개발과 관련하여 아래 2개의 Repository를 통해 SDK, Library, Sample Application 등 꽤 많은 자료와 코드를 공개하고 있습니다.
 
-https://github.com/OPCFoundation/UA-.NET
+https://github.com/OPCFoundation/UA-.NET<br>
 https://github.com/OPCFoundation/UA-.NETStandardLibrary
 
 
@@ -31,13 +31,13 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
  - Visual Studio 2017
   . UA-.NETStandardLibrary 가 Visual Studio 2017로 작성되어 있음
    따라서 이전 버전의 Visual Studio를 사용하는 경우 프로젝트 형식 문제등으로 프로젝트가 로드되지 않을 수 있음
-   아래 링크를 참조하여 해결해 볼 수 있으나 Visual Studio 2017 사용 추천
+   아래 링크를 참조하여 해결해 볼 수 있으나 Visual Studio 2017 사용 추천<br>
  https://stackoverflow.com/questions/42509313/the-default-xml-namespace-of-the-project-must-be-the-msbuild-xml-namespace  
 
  - UWP나 크로스플랫폼 연관 프로젝트가 로드되지 않는 경우 해당 프로젝트를 솔루션에서 삭제하거나
    Visual Studio에 해당 Work Load를 추가 설치한다. (Work Load 추가 설치를 추천하나 꽤 용량을 많이 차지한다.)
 
- - 개발할 내용을 파악하거나 테스트를 하기 위해 'Sample Applcation' 바이너리 패키지를 미리 설치 하는 것을 추천(회원 가입 필요)
+ - 개발할 내용을 파악하거나 테스트를 하기 위해 'Sample Applcation' 바이너리 패키지를 미리 설치 하는 것을 추천(회원 가입 필요)<br>
 https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sample-applications/
 
  - OPC UA 관련 프로그램을 빌드하고 실행하기 위해서는 'CertificateGenerator'와 'Local Discovery Server(LDS)'가 필요할 수 있음.
@@ -46,11 +46,11 @@ https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sa
  패키지에는 ''CertificateGenerator'와 LDS가 포함되어 있음
 
  - Certificate Generator 빌드
-  https://github.com/OPCFoundation/Misc-Tools 에서 소스코드를 받아 빌드
+  https://github.com/OPCFoundation/Misc-Tools 에서 소스코드를 받아 빌드<br>
   (Copy the CertificateGenerator output to the .NET Sample Applications output directory)
 
 
- - Local Discovery Server(LDS) 빌드
+ - Local Discovery Server(LDS) 빌드<br>
    https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/local-discovery-server-lds/
 
 
@@ -90,8 +90,7 @@ OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있
  물리적으로 고립된 네트웍이거나 보안이 필요없는 공공 데이터인 경우에 고려 할 수 있는 방식이다.
 
 - Tier 2 : Server Authentication
-  서버는 모든 클라이언트의 접속을 허용하고 클라이언트가 유효한 서버인지를 확인하는 모드이다. 서버에서 사용자 인증이 필요한 경우
- id/password 정보, 사용자의 개인인증서를 활용할 수 있다.
+  서버는 모든 클라이언트의 접속을 허용하고 클라이언트가 유효한 서버인지를 확인하는 모드이다. 서버에서 사용자 인증이 필요한 경우 id/password 정보, 사용자의 개인인증서를 활용할 수 있다.
   클라이언트는 서버가 보낸 인증서가 자신이 신뢰하는 CA(Certificate Authority)에서 발행한 인증서이거나, 신뢰하는 인증서로 등록되어 있는 경우
 통신을 허용한다.
  신뢰하는 인증서로 등록되어 있지 않은 경우 인증서의 도메인 정보와 실제 접속하고 있는 서버의 도메인이 일치하는지 확인하고 일치하면 접속을 허용한다.
@@ -120,15 +119,15 @@ OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있
 
 
  예제 프로그램들의 경우, ApplicationInstance 객체의 CheckApplicationInstanceCertificate() 메소드를 호출하여 만들어진 인증서가 없는 경우 자동으로 만들어지도록 되어 있다. 이를 self-signed certificates 라고 한다.
- 만들어진 인증서는 기본적으로 아래 2폴더에 동시에 생성된다.
- C:\ProgramData\OPC Foundation\CertificateStores\MachineDefault\certs
+ 만들어진 인증서는 기본적으로 아래 2폴더에 동시에 생성된다.<br>
+ C:\ProgramData\OPC Foundation\CertificateStores\MachineDefault\certs<br>
  C:\ProgramData\OPC Foundation\CertificateStores\UA Applications\certs
 
- OPC UA Foundation에서 제공하는 예제들의 경우 신뢰하는 인증서 디렉토리로 'C:\ProgramData\OPC Foundation\CertificateStores\UA Applications\certs'이며, 이는 Configuration 파일의 'TrustedIssuerCertificates' 섹션에 지정되어 있다.
+ OPC UA Foundation에서 제공하는 예제들의 경우 신뢰하는 인증서 디렉토리는 <br>
+ 'C:\ProgramData\OPC Foundation\CertificateStores\UA Applications\certs'이며, 이는 Configuration 파일의 'TrustedIssuerCertificates' 섹션에 지정되어 있다.
  예제 프로그램에서 Configuration 파일은 app.config 파일의 설정 또는 어셈블리 네임을 기준으로 자동으로 찾도록 되어 있으며 기본적으로 "프로그램이름.config.xml" 파일이다.
 
- 즉, Tier 2인 경우 서버 Applciation의 인증서를 Client 컴퓨터의 'C:\ProgramData\OPC Foundation\CertificateStores\UA Applications\certs' 폴더로
-사전에 copy 해 놓을 필요가 있다.
+ 즉, Tier 2인 경우 서버 Applciation의 인증서를 Client 컴퓨터의 'C:\ProgramData\OPC Foundation\CertificateStores\UA Applications\certs' 폴더로 사전에 copy 해 놓을 필요가 있다.
  또는 신뢰하고자 하는 인증서가 접속 실패 후 'RejectedCertificates'폴더에 생성된 경우 이를 신뢰 인증서 폴더로 이동하여 처리 할 수 있다.
  예제 프로그램에서는 사전에 신뢰할 수 있는 인증서로 등록되어 있지 않은 경우, 신뢰할 수 없는 인증서라는 경고와 함께 계속 진행하겠냐고 묻는 대화상자가 뜨고 '예'를 누르는 경우 통신을 할 수 있게 되어있다.
 
@@ -180,8 +179,8 @@ Cofiguration 파일에서 ThubmPrint를 명시할 수 있다.
 
 
 ## 참고 사이트
- https://opcfoundation.org/
- http://opcfoundation.github.io/UA-.NET/
- http://opcfoundation.github.io/UA-.NET/help/index.htm
- http://wiki.opcfoundation.org/index.php/UA_Overview
+ https://opcfoundation.org/<br>
+ http://opcfoundation.github.io/UA-.NET/<br>
+ http://opcfoundation.github.io/UA-.NET/help/index.htm<br>
+ http://wiki.opcfoundation.org/index.php/UA_Overview<br>
 
