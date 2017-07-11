@@ -128,7 +128,7 @@ OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있
 
  즉, Tier 2인 경우 서버 Applciation의 인증서를 Client 컴퓨터의 'C:\ProgramData\OPC Foundation\CertificateStores\UA Applications\certs' 폴더로 사전에 copy 해 놓을 필요가 있다.<br>
  또는 신뢰하고자 하는 인증서가 접속 실패 후 'RejectedCertificates'폴더에 생성된 경우 이를 신뢰 인증서 폴더로 이동하여 처리 할 수 있다.<br>
- 예제 프로그램에서는 사전에 신뢰할 수 있는 인증서로 등록되어 있지 않은 경우, 신뢰할 수 없는 인증서라는 경고와 함께 계속 진행하겠냐고 묻는 대화상자가 뜨고 '예'를 누르는 경우 통신을 할 수 있게 되어있다.
+ UA-.NETStandardLibrary 예제 프로그램에서는 사전에 신뢰할 수 있는 인증서로 등록되어 있지 않은 경우, 신뢰할 수 없는 인증서라는 경고와 함께 계속 진행하겠냐고 묻는 대화상자가 뜨고 '예'를 누르는 경우 통신을 할 수 있게 되어있다.
 
 
 - ThumbPrint<br>
