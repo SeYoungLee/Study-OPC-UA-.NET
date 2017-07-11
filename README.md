@@ -83,24 +83,24 @@ OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있
  인증이란 "내가 진짜 나라는 걸 증명 하는 것"이라 할 수 있는데, 서버는 접속을 요청한 클라이언트가 사전에 허용된 그 클라이언트가 맞는지 확인 후 접속을 받아 들여야 하고, 클라이언트 역시 지금 접속하고 있는 서버가 내가 접속하고자 하는 서버가 진짜 맞는지 확인 후 통신을 해야한다.<br>
  그러나 OPC UA에서 인증기능이 강제되어 있는 것은 아니고 선택적으로 적용할 수 있다.<br>
 따라서 4가지 케이스가 있을 수 있는데 OPC UA에서는 이 4가지 모두 사용할 수 있다. <br>
-(OPC UA Security Model에서는 이를 Security Tier라고 한다.)
+(OPC UA Security Model에서는 이를 Security Tier라고 한다)<br>
 
- - Tier 1 : No Authenication
+ - Tier 1 : No Authenication<br>
  클라이언트, 서버 모두 상대방이 믿을 만한 상대인지 확인하지 않는 모드이다. 그러나 이경우에도 유효한 인증서를 상호간에 교환해야 하고 유효하지
 않은 인증서인 경우 통신에 실패한다. 인증기능을 사용하지 않을지라도 인증에 대해 알아야 하는 이유중 하나이다.<br>
  물리적으로 고립된 네트웍이거나 보안이 필요없는 공공 데이터인 경우에 고려 할 수 있는 방식이다.
 
-- Tier 2 : Server Authentication
+- Tier 2 : Server Authentication<br>
   서버는 모든 클라이언트의 접속을 허용하고 클라이언트가 유효한 서버인지를 확인하는 모드이다. 서버에서 사용자 인증이 필요한 경우 id/password 정보, 사용자의 개인인증서를 활용할 수 있다.<br>
   클라이언트는 서버가 보낸 인증서가 자신이 신뢰하는 CA(Certificate Authority)에서 발행한 인증서이거나, 신뢰하는 인증서로 등록되어 있는 경우
 통신을 허용한다.<br>
  신뢰하는 인증서로 등록되어 있지 않은 경우 인증서의 도메인 정보와 실제 접속하고 있는 서버의 도메인이 일치하는지 확인하고 일치하면 접속을 허용한다.
 
 
-- Tier 3 - Client Authentication
+- Tier 3 - Client Authentication<br>
   클라이언트는 검증없이 서버에 접속하고 서버에서 클라이언트를 인증하는 방식이다.
 
-- Tier 4 - Mutual Authentication
+- Tier 4 - Mutual Authentication<br>
  서버, 클라이언트 상호간에 인증을 하고 통신하는 방식이다.
 
 
