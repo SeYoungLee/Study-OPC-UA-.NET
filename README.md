@@ -33,7 +33,7 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
    아래 링크를 참조하여 해결해 볼 수 있으나 Visual Studio 2017 사용 추천<br>
  https://stackoverflow.com/questions/42509313/the-default-xml-namespace-of-the-project-must-be-the-msbuild-xml-namespace  
 
- - UWP나 크로스플랫폼 연관 프로젝트가 로드되지 않는 경우 해당 프로젝트를 솔루션에서 삭제하거나<br>
+- UWP나 크로스플랫폼 연관 프로젝트가 로드되지 않는 경우 해당 프로젝트를 솔루션에서 삭제하거나<br>
    Visual Studio에 해당 Work Load를 추가 설치한다. (Work Load 추가 설치를 추천하나 꽤 용량을 많이 차지한다)
 
  - 개발할 내용을 파악하거나 테스트를 하기 위해 'Sample Applcation' 바이너리 패키지를 미리 설치 하는 것을 추천(회원 가입 필요)<br>
@@ -63,7 +63,7 @@ https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sa
 - Opc.Ua.Configuration : ApplicationInstant 객체 및 각종 상수값 등이 정의 되어 있음
 <br>
 2.기타 유용한 모듈<br><br>
- 다음의 모듈들은 OPC UA 관련 응용프로그램을 개발할 때 참조하거나 사용할 수 있는 UI Control들을 포함하고 있으며 상용제품이 아닌 프로토타입이나 학습을 위한 프로그램을 만들때 유용하다.
+ 다음의 모듈들은 OPC UA 관련 응용프로그램을 개발할 때 참조하거나 사용할 수 있는 UI Control들을 포함하고 있으며 상용제품이 아닌 프로토타입이나 학습을 위한 프로그램을 만들때 유용하다.<br>
 - Opc.Ua.SampleControls<br>
 - Opc.Ua.ServerControls<br>
 - Opc.Ua.ClientControls<br>
