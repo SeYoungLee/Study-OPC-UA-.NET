@@ -26,26 +26,26 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
 
 ## 사전 요구사항 및 추천사항
 
- - .Net Framework 4.6.1
+ - .Net Framework 4.6.1<br>
 
- - Visual Studio 2017
+ - Visual Studio 2017<br>
   . UA-.NETStandardLibrary 가 Visual Studio 2017로 작성되어 있음
    따라서 이전 버전의 Visual Studio를 사용하는 경우 프로젝트 형식 문제등으로 프로젝트가 로드되지 않을 수 있음
    아래 링크를 참조하여 해결해 볼 수 있으나 Visual Studio 2017 사용 추천<br>
  https://stackoverflow.com/questions/42509313/the-default-xml-namespace-of-the-project-must-be-the-msbuild-xml-namespace  
 
  - UWP나 크로스플랫폼 연관 프로젝트가 로드되지 않는 경우 해당 프로젝트를 솔루션에서 삭제하거나
-   Visual Studio에 해당 Work Load를 추가 설치한다. (Work Load 추가 설치를 추천하나 꽤 용량을 많이 차지한다.)
+   Visual Studio에 해당 Work Load를 추가 설치한다. (Work Load 추가 설치를 추천하나 꽤 용량을 많이 차지한다)
 
  - 개발할 내용을 파악하거나 테스트를 하기 위해 'Sample Applcation' 바이너리 패키지를 미리 설치 하는 것을 추천(회원 가입 필요)<br>
 https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sample-applications/
 
- - OPC UA 관련 프로그램을 빌드하고 실행하기 위해서는 'CertificateGenerator'와 'Local Discovery Server(LDS)'가 필요할 수 있음.
+ - OPC UA 관련 프로그램을 빌드하고 실행하기 위해서는 'CertificateGenerator'와 'Local Discovery Server(LDS)'가 필요할 수 있음<br>
   직접 빌드해서 사용할 수도 있으나 C++ 개발환경을 구축한다거나 Open SSL을 빌드해서 추가해야 하는등 귀찮고 번거로운 점이 많음.
  시작부터 진을 빼지 않기 위해, 다시 한번 'Sample Applcation'패키지를 다운받아 설치 할 것을 추천.
  패키지에는 ''CertificateGenerator'와 LDS가 포함되어 있음
 
- - Certificate Generator 빌드
+ - Certificate Generator 빌드<br>
   https://github.com/OPCFoundation/Misc-Tools 에서 소스코드를 받아 빌드<br>
   (Copy the CertificateGenerator output to the .NET Sample Applications output directory)
 
