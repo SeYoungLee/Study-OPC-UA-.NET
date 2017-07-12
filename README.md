@@ -205,15 +205,13 @@ var node = _session.ReadValue(new NodeId("ns=x;i=xxxx"));
 
 
 ### Mimimal Client With Certification
-- 업로드 예정
+
 
 ### Server 및 Endpoint 정보 조회
-- 업로드 예정
+
 
 ### Subscription 기능
-- 업로드 예정
 
-### Sever Ad
 
 
 
