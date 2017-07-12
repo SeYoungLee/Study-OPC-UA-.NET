@@ -168,6 +168,18 @@ Cofiguration 파일에서 ThumbPrint를 명시할 수 있다.
 10. 암화화 통신
 
 
+##Address Space
+Address Space는 OPC UA의 데이터 저장소 또는 데이터 모델이라고 할 수 있다.<br>
+Address Space는 Node와 Node의 관계를 통해 객체지향적으로 데이터 모델을 구성한다.<br>
+Node는 Object, Variable, Method, View, ObjectType,VariableType, ReferencyType, DataType 중에 하나가 되며, 이를 Node Class라고 한다.
+Node는 Node를 설명하는 Attributes와 다른 노드와의 관계를 나타내는 References를 가진다.<br>
+Object의 노드의 경우 Variable들과 Methoe들을 가지고 Client는 이를 통해 값을 조회하거나 Event를 통보 받거나 서비스를 호출 할 수 있다.<br>
+Variable 노드는 Property와 Data Variable 두 종류로 나뉘어지고 Property는 object의 Meata 데이터를 정의하는데 사용되고, Data Variable은 Object가 제공하고자 하는 실제 Data를 표현하는데 사용된다.<br>
+Attribute는 OPC UA Spec에 의해 정해져 있으므로 추가 될 수 없지만 Property는 추가가 가능하다.<br>
+
+
+
+
 ## 예제 프로젝트
 
 ### Minimal Client
@@ -193,6 +205,16 @@ var node = _session.ReadValue(new NodeId("ns=x;i=xxxx"));
 
 
 ### Mimimal Client With Certification
+- 업로드 예정
+
+### Server 및 Endpoint 정보 조회
+- 업로드 예정
+
+### Subscription 기능
+- 업로드 예정
+
+### Sever Ad
+
 
 
 ## Troubleshooting
