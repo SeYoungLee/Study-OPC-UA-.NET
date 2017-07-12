@@ -171,15 +171,32 @@ Cofiguration 파일에서 ThumbPrint를 명시할 수 있다.
 ## 예제 프로젝트
 
 ### Minimal Client
+- 최소한의 코드로 OPC UA Client를 구현
+- config 파일도 사용하지 않음(xxx.config.xml, app.config)
+- 신뢰할 수 없는 (서버)인증서를 허용하도록 설정
+- Opc.Ua.Sample.Controls.BrowseTreeCtrl을 사용하여 Address Space 조회
+  샘플 컨트롤을 사용하지 않는 경우 Session.Browse() 메소드를 통해 
+  Address Space를 조회 할 수 있음
+- BrowseTreeCtrl 에서 노드를 선택하고 마우스 오른쪽 버튼 클릭하면 속성 및 값을 조회할 수 있음
+- 실행 흐름은 다음과 같음
+  . Configuration 객체 생성 및 설정
+  . Session 객체 생성
+  . Session을 통해 Address Space조회
+- 조회할 Node정보를 아는 경우 Session.ReadValue() 메소드를 사용하여 개별 Node정보를 조회 할 수 있음
+var node = _session.ReadValue(new NodeId("ns=x;i=xxxx"));
 
 ### Mimimal Server
+- 최소한의 코드로 OPC UA Server 구현
+- config 파일도 사용하지 않음(xxx.config.xml, app.config)
+- 인증서 생성 및 인증서 저장소 설정은 필요
+
 
 ### Mimimal Client With Certification
 
 
 ## Troubleshooting
 ### 인증서 관련 문제가 발생하는 경우
- . 인증서 Directory를 백업하고 인증서들을 삭제해 본다
+ . 인증서 Directory를 백업하고 인증서들을 삭제해 본다<br>
  . 'Opc.Ua.CertificateGenerator.exe'가 존재하는지 확인하고
    어플리케이션이 존재하는 폴더로 복사해 본다
 
