@@ -168,7 +168,7 @@ Cofiguration 파일에서 ThumbPrint를 명시할 수 있다.
 10. 암화화 통신
 
 
-##Address Space
+## Address Space
 Address Space는 OPC UA의 데이터 저장소 또는 데이터 모델이라고 할 수 있다.<br>
 Address Space는 Node와 Node의 관계를 통해 객체지향적으로 데이터 모델을 구성한다.<br>
 Node는 Object, Variable, Method, View, ObjectType,VariableType, ReferencyType, DataType 중에 하나가 되며, 이를 Node Class라고 한다.
