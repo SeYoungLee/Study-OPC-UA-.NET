@@ -182,7 +182,7 @@ Cofiguration 파일에서 ThumbPrint를 명시할 수 있다.
   . Configuration 객체 생성 및 설정
   . Session 객체 생성
   . Session을 통해 Address Space조회
-- 조회할 Node정보를 아는 경우 Session.ReadValue() 메소드를 사용하여 개별 Node정보를 조회 할 수 있음
+- 조회할 Node정보를 아는 경우 Session.ReadValue() 메소드를 사용하여 개별 Node정보를 조회 할 수 있음<br>
 var node = _session.ReadValue(new NodeId("ns=x;i=xxxx"));
 
 ### Mimimal Server
