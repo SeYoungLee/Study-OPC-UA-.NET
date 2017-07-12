@@ -16,7 +16,8 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
 
  상기의 두 Repostiory는 동일하거나 유사해 보이는 프로젝트를 많이 포함하고 있으나, Certificates 처리 등 미세하게 다른 부분들이 있고,
  가장 큰 차이점은 UA-.NETStandardLibrary는 .Net Standard 프레임워크를 사용하여 Linux, iOS, Android를 포함하여 Cloud환경도 지원한다는 점입니다.<br>
- 멀티플랫폼을 지원하는 UA-.NETStandardLibrary을 활용하는 것이 좀 더 바람직하겠으나, 라이브러리/모듈 의존관계가 복잡하고 OPC Foundation에서 제공하는 샘플 패키지 역시 UA-.Net으로 개발되어 있으므로, 처음 학습을 할 때에는 UA-.NET으로 하는게  효율적일 것 같습니다. 따라서 본 Repository는 UA-.NET Repository를 베이스로 합니다.
+ 멀티플랫폼을 지원하는 UA-.NETStandardLibrary을 활용하는 것이 좀 더 바람직하겠으나, 라이브러리/모듈 의존관계가 복잡하고 OPC Foundation에서 제공하는 샘플 패키지 역시 UA-.Net으로 개발되어 있으므로, 처음에는 UA-.NET으로 학습을 시작하는게 효율적일 것 같습니다. <br>
+ 따라서 본 Repository는 UA-.NET Repository를 베이스로 합니다.
 
 <br>
 여기서 부터는 간결함을 위해 반말체로 작성하겠습니다.
