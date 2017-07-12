@@ -56,7 +56,7 @@ https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sa
 ## 선수지식
 
 1.핵심모듈<br>
-다음의 4가지 모듈은 OPC UA .Net의 가장 핵심적인 모듈로서 프레임워크 .NETStandard 1.4를 사용하여 빌드됨, 다양한 .Net환경에서 공통적으로 사용할 수 있도록 되어 있다. 이 4가지 모듈이 OPC UA .Net의 SDK라고 할 수 있다.
+다음의 4가지 모듈은 OPC UA .Net의 가장 핵심적인 모듈로서 OPC UA .Net의 SDK라고 할 수 있다.
 - Opc.Ua.Core : Stack으로도 불리며 Low Level의 통신, 보안, Configuration 등의 기능들이 구현되어 있음
 - Opc.Ua.Server : Address Space 관리, Node관리 등 서버의 기능들이 구현되어 있음
 - Opc.Ua.Cleient : Address Space 조회, Subscription 등 서버에 연결하고 데이터를 조회하는 기능들이 구현되어 있음
