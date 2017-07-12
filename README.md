@@ -185,6 +185,7 @@ Cofiguration 파일에서 ThumbPrint를 명시할 수 있다.
 - 조회할 Node정보를 아는 경우 Session.ReadValue() 메소드를 사용하여 개별 Node정보를 조회 할 수 있음<br>
 var node = _session.ReadValue(new NodeId("ns=x;i=xxxx"));
 
+
 ### Mimimal Server
 - 최소한의 코드로 OPC UA Server 구현
 - config 파일도 사용하지 않음(xxx.config.xml, app.config)
