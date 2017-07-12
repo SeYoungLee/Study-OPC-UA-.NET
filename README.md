@@ -177,6 +177,12 @@ Cofiguration 파일에서 ThumbPrint를 명시할 수 있다.
 ### Mimimal Client With Certification
 
 
+## Troubleshooting
+### 인증서 관련 문제가 발생하는 경우
+ . 인증서 Directory를 백업하고 인증서들을 삭제해 본다
+ . 'Opc.Ua.CertificateGenerator.exe'가 존재하는지 확인하고
+   어플리케이션이 존재하는 폴더로 복사해 본다
+
 ## 참고 사이트
  https://opcfoundation.org/<br>
  http://opcfoundation.github.io/UA-.NET/<br>
