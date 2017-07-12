@@ -14,10 +14,9 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
  저 역시 OPC UA를  시작한지  않았지만 학습하면서 알게된 지식이나 know-how를 공유하여 OPC UA를 공부해 보려는 분들의 시행착오를 조금이라도 줄이는데 도움이 되었으면 합니다.
  부정확한 내용이 있을수 있음을 참조해 주시고, 틀린 내용이 있으면 Full Request나 Issue 등록 등을 통해 알려 주시길 부탁드립니다.
 
-
  상기의 두 Repostiory는 동일하거나 유사해 보이는 프로젝트를 많이 포함하고 있으나, Certificates 처리 등 미세하게 다른 부분들이 있고,
  가장 큰 차이점은 UA-.NETStandardLibrary는 .Net Standard 프레임워크를 사용하여 Linux, iOS, Android를 포함하여 Cloud환경도 지원한다는 점입니다.<br>
- 본 Repository는 UA-.NETStandardLibrary을 베이스로 합니다.
+ 멀티플랫폼을 지원하는 UA-.NETStandardLibrary을 활용하는 것이 좀 더 바람직하겠으나, 라이브러리/모듈 의존관계가 복잡하고 OPC Foundation에서 제공하는 샘플 패키지 역시 UA-.Net으로 개발되어 있으므로, 처음 학습을 할 때에는 UA-.NET으로 하는게  효율적일 것 같습니다. 따라서 본 Repository는 UA-.NET Repository를 베이스로 합니다.
 
 <br>
 여기서 부터는 간결함을 위해 반말체로 작성하겠습니다.
