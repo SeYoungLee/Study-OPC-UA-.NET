@@ -205,7 +205,15 @@ var node = _session.ReadValue(new NodeId("ns=x;i=xxxx"));
 
 
 ### Mimimal Client With Certification
-
+- app.config와 OPC UA를 위한 XML설정 파일 사용
+- application.ConfigSectionName에 XML설정파일 경로를 가지고 있는
+  app.config 파일내의 Section을 설정
+- application.LoadApplicationConfiguration()에서 app.config를 참조하여
+  OPC UA 설정 파일을 찾고, 이것을 로드하여 configuration 객체 생성
+- 설정파일에는 "SecurityConfiguration" 영역과 "ClientConfiguration" 영역이 있음
+- "SecurityConfiguration"에는 주로 인증서 관련 설정이, "ClientConfiguration" 에는
+  End Point 검색 및 통신에 관련된 내용이 있음
+- Application Type이 서버인 경우 "ClientConfiguration" 대신 "ServerConfiguration" 영역이 필요
 
 ### Server 및 Endpoint 정보 조회
 
