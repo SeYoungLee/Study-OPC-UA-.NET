@@ -234,4 +234,5 @@ var node = _session.ReadValue(new NodeId("ns=x;i=xxxx"));
  http://opcfoundation.github.io/UA-.NET/<br>
  http://opcfoundation.github.io/UA-.NET/help/index.htm<br>
  http://wiki.opcfoundation.org/index.php/UA_Overview<br>
+ http://documentation.unified-automation.com/uasdkdotnet/2.5.5/html/index.html<br>
 
