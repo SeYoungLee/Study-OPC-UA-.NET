@@ -3,6 +3,9 @@
 ## 개요
 본 Repository의 목적은 .Net 환경에서의 OPC UA 학습을 처음시작하려는 분들에게 도움이 되기 위함입니다.
 
+
+ - .Net Framework 4.6.1<br>
+
  OPC Foundation에서는 .Net 환경에서의 OPC UA 개발과 관련하여 아래 2개의 Repository를 통해 SDK, Library, Sample Application 등 꽤 많은 자료와 코드를 공개하고 있습니다.
 
 https://github.com/OPCFoundation/UA-.NET<br>
@@ -24,9 +27,6 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
 
 
 ## 사전 요구사항 및 추천사항
-
- - .Net Framework 4.6.1<br>
-
  - Visual Studio 2017<br>
   . UA-.NETStandardLibrary 가 Visual Studio 2017로 작성되어 있음<br>
    따라서 이전 버전의 Visual Studio를 사용하는 경우 프로젝트 형식 문제등으로 프로젝트가 로드되지 않을 수 있음<br>
@@ -53,7 +53,7 @@ https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sa
    https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/local-discovery-server-lds/
 
 
-## 선수지식
+## UA-.Net의 주요모듈
 
 1.핵심모듈<br>
 다음의 4가지 모듈은 OPC UA .Net의 가장 핵심적인 모듈로서 OPC UA .Net의 SDK라고 할 수 있다.
@@ -68,7 +68,9 @@ https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sa
 - Opc.Ua.ServerControls<br>
 - Opc.Ua.ClientControls<br>
 <br>
-3.OPC UA의 보안<br>
+
+## OPC UA와 OPC Classsic의 주요 차이점
+
 OPC UA와 OPC Classic의 가장 큰 차이점은 보안에 대한 기능 강화와 플랫폼 독립적인 기술이라는 점이다.<br>
 특히, OPC UA의 보안에 대한 내용은 OPC UA를 학습하고자 할 때 가장 먼저 만나게 되는 걸림돌이라 생각된다.<br>
 OPC UA에 본격적으로 학습하기 전에 OPC UA의 보안 메카니즘에 대해서 어느정도 학습할 것을 권장한다.<br>
