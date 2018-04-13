@@ -114,8 +114,8 @@ OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있
 서버에서는 id/password로 클라이언트 접속을 허용하도록 하는 방식이 가장 적합하지 않을까 싶다.
 
  정리하자면,<br>
-첫째, 어떤 인증모드를 사용하 심지어 No Authentication 모드를 사용한다 할지라도 인증서(Cerificate)를 만들어야 하고 상호 교환해야 한다.<br>
-둘째, 인증 기능을 사용하려면 선택한 방식에 따라 인증서를 상대방에게 사전에 전달해고 등록해야 한다.
+첫째, 어떤 인증모드를 사용하든지, 심지어 No Authentication 모드를 사용한다 할지라도 인증서(Cerificate)를 만들어야 하고 상호 교환해야 한다.<br>
+둘째, 인증 기능을 사용하려면 선택한 방식에 따라 인증서를 상대방에게 사전에 전달하고 등록해야 한다.
 
 
  UA-.NETStandardLibrary 예제 프로그램들의 경우, ApplicationInstance 객체의 CheckApplicationInstanceCertificate() 메소드를 호출하여 만들어진 인증서가 없는 경우 자동으로 만들어지도록 되어 있다. 이를 self-signed certificates 라고 한다.<br>
