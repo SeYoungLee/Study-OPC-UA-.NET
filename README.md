@@ -3,9 +3,6 @@
 ## 개요
 본 Repository의 목적은 .Net 환경에서의 OPC UA 학습을 처음시작하려는 분들에게 도움이 되기 위함입니다.
 
-
- - .Net Framework 4.6.1<br>
-
  OPC Foundation에서는 .Net 환경에서의 OPC UA 개발과 관련하여 아래 2개의 Repository를 통해 SDK, Library, Sample Application 등 꽤 많은 자료와 코드를 공개하고 있습니다.
 
 https://github.com/OPCFoundation/UA-.NET<br>
@@ -32,8 +29,10 @@ https://github.com/OPCFoundation/UA-.NETStandardLibrary
    따라서 이전 버전의 Visual Studio를 사용하는 경우 프로젝트 형식 문제등으로 프로젝트가 로드되지 않을 수 있음<br>
    아래 링크를 참조하여 해결해 볼 수 있으나 Visual Studio 2017 사용 추천<br>
  https://stackoverflow.com/questions/42509313/the-default-xml-namespace-of-the-project-must-be-the-msbuild-xml-namespace  
+ 
+ - .Net Framework 4.6.1<br>
 
-- UWP나 크로스플랫폼 연관 프로젝트가 로드되지 않는 경우 해당 프로젝트를 솔루션에서 삭제하거나<br>
+ - UWP나 크로스플랫폼 연관 프로젝트가 로드되지 않는 경우 해당 프로젝트를 솔루션에서 삭제하거나<br>
    Visual Studio에 해당 Work Load를 추가 설치한다. (Work Load 추가 설치를 추천하나 꽤 용량을 많이 차지한다)
 
  - 개발할 내용을 파악하거나 테스트를 하기 위해 'Sample Applcation' 바이너리 패키지를 미리 설치 하는 것을 추천(회원 가입 필요)<br>
@@ -73,7 +72,7 @@ https://opcfoundation.org/developer-tools/developer-kits-unified-architecture/sa
 
 OPC UA와 OPC Classic의 가장 큰 차이점은 보안에 대한 기능 강화와 OPC UA가 플랫폼 독립적인 기술이라는 것이다.<br>
 특히, OPC UA의 보안에 대한 내용은 OPC UA를 학습하고자 할 때 가장 먼저 만나게 되는 걸림돌이라 생각된다.<br>
-OPC UA에 본격적으로 학습하기 전에 OPC UA의 보안 메카니즘에 대해서 어느정도 학습할 것을 권장한다.<br>
+ 따라서, OPC UA를 본격적으로 학습하기 전에 OPC UA의 보안 메카니즘에 대해서 어느정도 학습할 것을 권장한다.<br>
 OPC UA는 인증서나 암호화를 사용하지 않고도 통신을 할 수 있도록 되어 있으나, 코드를 분석하다 보면 보안관련 내용과 계속 맞닺뜨리게 되어 있다.<br>
 
 
